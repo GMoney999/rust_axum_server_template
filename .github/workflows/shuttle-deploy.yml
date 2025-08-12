@@ -19,8 +19,14 @@ jobs:
       - name: Install cargo-shuttle
         run: cargo install cargo-shuttle --version '^0.53'
 
+      - name: Install cargo-shuttle
+        run: cargo install cargo-shuttle --locked
+
       - name: Deploy to Shuttle
         env:
           SHUTTLE_API_KEY: ${{ secrets.SHUTTLE_API_KEY }}
-        run: cargo shuttle deploy
+        run: |
+          # Authenticate non-interactively using the API key secret
+          shuttle login --api-key "$SHUTTLE_API_KEY"
+          cargo shuttle deploy --no-confirm
 

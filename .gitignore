@@ -1,3 +1,4 @@
-Secrets.toml
-Secrets.dev.toml
+Secrets*.toml
 .env
+.idea
+target

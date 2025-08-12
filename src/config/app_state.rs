@@ -7,6 +7,7 @@ use crate::config::ServerConfig;
 pub struct AppState {
     pub pool: PgPool,
     pub cfg: ServerConfig,
+    #[allow(dead_code)]
     pub started_at: Instant,
 }
 

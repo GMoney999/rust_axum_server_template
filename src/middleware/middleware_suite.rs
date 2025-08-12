@@ -2,6 +2,7 @@
 use tower::Layer;
 use tower_http::cors::CorsLayer;
 
+#[allow(dead_code)]
 pub trait MiddlewareSuite {
     fn trace<S>(&self) -> impl Layer<S> + Clone;
     fn normalize_path<S>(&self) -> impl Layer<S> + Clone;
@@ -9,5 +10,4 @@ pub trait MiddlewareSuite {
     fn timeout<S>(&self) -> impl Layer<S> + Clone;
     fn cors_layer(&self) -> Option<CorsLayer>;
 }
-
 

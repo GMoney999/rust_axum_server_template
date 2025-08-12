@@ -5,7 +5,6 @@ mod middleware;
 mod routes;
 mod models;
 
-use anyhow::Context;
 use config::{AppState, ServerConfig};
 use models::Server;
 
