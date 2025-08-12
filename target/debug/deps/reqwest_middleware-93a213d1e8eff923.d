@@ -1,0 +1,9 @@
+/Users/geramisadeghi/dev/APIs/Templates/REST/template_server/target/debug/deps/libreqwest_middleware-93a213d1e8eff923.rmeta: /Users/geramisadeghi/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/reqwest-middleware-0.4.2/src/lib.rs /Users/geramisadeghi/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/reqwest-middleware-0.4.2/src/client.rs /Users/geramisadeghi/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/reqwest-middleware-0.4.2/src/error.rs /Users/geramisadeghi/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/reqwest-middleware-0.4.2/src/middleware.rs /Users/geramisadeghi/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/reqwest-middleware-0.4.2/src/req_init.rs
+
+/Users/geramisadeghi/dev/APIs/Templates/REST/template_server/target/debug/deps/reqwest_middleware-93a213d1e8eff923.d: /Users/geramisadeghi/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/reqwest-middleware-0.4.2/src/lib.rs /Users/geramisadeghi/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/reqwest-middleware-0.4.2/src/client.rs /Users/geramisadeghi/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/reqwest-middleware-0.4.2/src/error.rs /Users/geramisadeghi/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/reqwest-middleware-0.4.2/src/middleware.rs /Users/geramisadeghi/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/reqwest-middleware-0.4.2/src/req_init.rs
+
+/Users/geramisadeghi/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/reqwest-middleware-0.4.2/src/lib.rs:
+/Users/geramisadeghi/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/reqwest-middleware-0.4.2/src/client.rs:
+/Users/geramisadeghi/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/reqwest-middleware-0.4.2/src/error.rs:
+/Users/geramisadeghi/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/reqwest-middleware-0.4.2/src/middleware.rs:
+/Users/geramisadeghi/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/reqwest-middleware-0.4.2/src/req_init.rs:

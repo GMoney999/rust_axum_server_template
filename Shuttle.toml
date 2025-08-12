@@ -1,0 +1,3 @@
+# Shuttle.toml
+# Keep this tiny; it's mainly for your project's identity on Shuttle.
+name = "axum-server-shuttle"   # pick a unique name for deploys

@@ -1,0 +1,10 @@
+/Users/geramisadeghi/dev/APIs/Templates/REST/template_server/target/debug/deps/libstrfmt-520f8f95d54a1d56.rmeta: /Users/geramisadeghi/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/strfmt-0.2.5/src/lib.rs /Users/geramisadeghi/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/strfmt-0.2.5/src/fmtstr.rs /Users/geramisadeghi/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/strfmt-0.2.5/src/formatter.rs /Users/geramisadeghi/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/strfmt-0.2.5/src/types.rs /Users/geramisadeghi/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/strfmt-0.2.5/src/fmtnum.rs /Users/geramisadeghi/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/strfmt-0.2.5/src/macros.rs
+
+/Users/geramisadeghi/dev/APIs/Templates/REST/template_server/target/debug/deps/strfmt-520f8f95d54a1d56.d: /Users/geramisadeghi/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/strfmt-0.2.5/src/lib.rs /Users/geramisadeghi/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/strfmt-0.2.5/src/fmtstr.rs /Users/geramisadeghi/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/strfmt-0.2.5/src/formatter.rs /Users/geramisadeghi/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/strfmt-0.2.5/src/types.rs /Users/geramisadeghi/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/strfmt-0.2.5/src/fmtnum.rs /Users/geramisadeghi/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/strfmt-0.2.5/src/macros.rs
+
+/Users/geramisadeghi/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/strfmt-0.2.5/src/lib.rs:
+/Users/geramisadeghi/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/strfmt-0.2.5/src/fmtstr.rs:
+/Users/geramisadeghi/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/strfmt-0.2.5/src/formatter.rs:
+/Users/geramisadeghi/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/strfmt-0.2.5/src/types.rs:
+/Users/geramisadeghi/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/strfmt-0.2.5/src/fmtnum.rs:
+/Users/geramisadeghi/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/strfmt-0.2.5/src/macros.rs:

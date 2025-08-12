@@ -1,0 +1,12 @@
+/Users/geramisadeghi/dev/APIs/Templates/REST/template_server/target/debug/deps/libcrc-bc48bd93ca7fcec4.rmeta: /Users/geramisadeghi/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/crc-3.3.0/src/lib.rs /Users/geramisadeghi/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/crc-3.3.0/src/crc128.rs /Users/geramisadeghi/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/crc-3.3.0/src/crc16.rs /Users/geramisadeghi/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/crc-3.3.0/src/crc32.rs /Users/geramisadeghi/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/crc-3.3.0/src/crc64.rs /Users/geramisadeghi/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/crc-3.3.0/src/crc8.rs /Users/geramisadeghi/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/crc-3.3.0/src/table.rs /Users/geramisadeghi/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/crc-3.3.0/src/util.rs
+
+/Users/geramisadeghi/dev/APIs/Templates/REST/template_server/target/debug/deps/crc-bc48bd93ca7fcec4.d: /Users/geramisadeghi/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/crc-3.3.0/src/lib.rs /Users/geramisadeghi/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/crc-3.3.0/src/crc128.rs /Users/geramisadeghi/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/crc-3.3.0/src/crc16.rs /Users/geramisadeghi/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/crc-3.3.0/src/crc32.rs /Users/geramisadeghi/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/crc-3.3.0/src/crc64.rs /Users/geramisadeghi/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/crc-3.3.0/src/crc8.rs /Users/geramisadeghi/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/crc-3.3.0/src/table.rs /Users/geramisadeghi/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/crc-3.3.0/src/util.rs
+
+/Users/geramisadeghi/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/crc-3.3.0/src/lib.rs:
+/Users/geramisadeghi/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/crc-3.3.0/src/crc128.rs:
+/Users/geramisadeghi/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/crc-3.3.0/src/crc16.rs:
+/Users/geramisadeghi/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/crc-3.3.0/src/crc32.rs:
+/Users/geramisadeghi/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/crc-3.3.0/src/crc64.rs:
+/Users/geramisadeghi/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/crc-3.3.0/src/crc8.rs:
+/Users/geramisadeghi/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/crc-3.3.0/src/table.rs:
+/Users/geramisadeghi/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/crc-3.3.0/src/util.rs:

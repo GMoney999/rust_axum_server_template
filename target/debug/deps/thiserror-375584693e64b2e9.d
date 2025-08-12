@@ -1,0 +1,10 @@
+/Users/geramisadeghi/dev/APIs/Templates/REST/template_server/target/debug/deps/libthiserror-375584693e64b2e9.rmeta: /Users/geramisadeghi/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/thiserror-2.0.14/src/lib.rs /Users/geramisadeghi/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/thiserror-2.0.14/src/aserror.rs /Users/geramisadeghi/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/thiserror-2.0.14/src/display.rs /Users/geramisadeghi/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/thiserror-2.0.14/src/var.rs
+
+/Users/geramisadeghi/dev/APIs/Templates/REST/template_server/target/debug/deps/libthiserror-375584693e64b2e9.rlib: /Users/geramisadeghi/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/thiserror-2.0.14/src/lib.rs /Users/geramisadeghi/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/thiserror-2.0.14/src/aserror.rs /Users/geramisadeghi/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/thiserror-2.0.14/src/display.rs /Users/geramisadeghi/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/thiserror-2.0.14/src/var.rs
+
+/Users/geramisadeghi/dev/APIs/Templates/REST/template_server/target/debug/deps/thiserror-375584693e64b2e9.d: /Users/geramisadeghi/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/thiserror-2.0.14/src/lib.rs /Users/geramisadeghi/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/thiserror-2.0.14/src/aserror.rs /Users/geramisadeghi/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/thiserror-2.0.14/src/display.rs /Users/geramisadeghi/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/thiserror-2.0.14/src/var.rs
+
+/Users/geramisadeghi/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/thiserror-2.0.14/src/lib.rs:
+/Users/geramisadeghi/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/thiserror-2.0.14/src/aserror.rs:
+/Users/geramisadeghi/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/thiserror-2.0.14/src/display.rs:
+/Users/geramisadeghi/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/thiserror-2.0.14/src/var.rs:

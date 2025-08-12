@@ -1,0 +1,40 @@
+[package]
+name = "axum-server-shuttle"
+version = "0.1.0"
+edition = "2024"
+resolver = "2"
+
+[dependencies]
+# --- Web stack ---
+axum = { version = "0.8.3", features = ["macros"] }
+tower = { version = "0.5", features = ["limit", "timeout"] }
+tower-http = { version = "0.6.2", features = [
+  "trace","cors","compression-full","decompression-full",
+  "request-id","normalize-path","auth","util","uuid","validate-request"
+] }
+http = "1"
+
+# --- Async runtime & tracing ---
+tokio = { version = "1", features = ["rt-multi-thread", "macros"] }
+tracing = "0.1"
+tracing-subscriber = { version = "0.3", features = ["env-filter", "fmt"] }
+
+# --- Shuttle integration ---
+shuttle-runtime = { version = "0.53.0", features = ["setup-otel-exporter"] }
+shuttle-axum    = "0.53.0"
+
+# --- Postgres with Shuttle + SQLx ---
+shuttle-shared-db = { version = "0.53.0", features = ["postgres", "sqlx"] }
+sqlx = { version = "0.8.5", features = ["runtime-tokio-rustls", "postgres", "macros"] }
+
+# --- JSON serialization ---
+serde = { version = "1.0", features = ["derive"] }
+serde_json = "1.0"
+uuid = { version = "1.16.0", features = ["v4"] }
+thiserror = "2.0.12"
+anyhow = "1.0"
+
+[profile.release]
+lto = true
+codegen-units = 1
+opt-level = 3
