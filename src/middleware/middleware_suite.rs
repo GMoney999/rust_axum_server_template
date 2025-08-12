@@ -10,4 +10,3 @@ pub trait MiddlewareSuite {
     fn timeout<S>(&self) -> impl Layer<S> + Clone;
     fn cors_layer(&self) -> Option<CorsLayer>;
 }
-

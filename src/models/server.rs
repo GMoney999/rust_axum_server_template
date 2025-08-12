@@ -1,18 +1,18 @@
 // src/models/server.rs (composition point)
+use crate::middleware::MiddlewareSuite;
 use crate::{
     config::AppState,
     middleware::Middleware,
-    routes::{health, create_todo, get_all_todos},
+    routes::{create_todo, get_all_todos, health},
 };
-use crate::middleware::MiddlewareSuite;
 use axum::{
     Router,
-    routing::{get, post}
+    routing::{get, post},
 };
 use tower::ServiceBuilder;
-use tower_http::trace::TraceLayer;
 use tower_http::normalize_path::NormalizePathLayer;
-use tower_http::request_id::{SetRequestIdLayer, PropagateRequestIdLayer, MakeRequestUuid};
+use tower_http::request_id::{MakeRequestUuid, PropagateRequestIdLayer, SetRequestIdLayer};
+use tower_http::trace::TraceLayer;
 
 #[derive(Clone)]
 pub struct Server {
@@ -30,7 +30,10 @@ impl Server {
         // Build concrete middleware layers directly from config
         let request_id_header = self.state.cfg.request_id_header.clone();
         let request_id_stack = ServiceBuilder::new()
-            .layer(SetRequestIdLayer::new(request_id_header.clone(), MakeRequestUuid))
+            .layer(SetRequestIdLayer::new(
+                request_id_header.clone(),
+                MakeRequestUuid,
+            ))
             .layer(PropagateRequestIdLayer::new(request_id_header))
             .into_inner();
 

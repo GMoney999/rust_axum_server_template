@@ -1,5 +1,4 @@
 #[tokio::test]
 async fn placeholder() {
-    assert!(true);
+    // Placeholder test - passes by doing nothing.
 }
-

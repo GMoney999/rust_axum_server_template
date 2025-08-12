@@ -2,8 +2,8 @@
 mod config;
 
 mod middleware;
-mod routes;
 mod models;
+mod routes;
 
 use config::{AppState, ServerConfig};
 use models::Server;
@@ -14,7 +14,6 @@ use sqlx::PgPool;
 use tower_http::validate_request::ValidateRequestHeaderLayer;
 use tracing_subscriber::{layer::SubscriberExt, util::SubscriberInitExt};
 
-
 #[shuttle_runtime::main]
 async fn axum(
     #[shuttle_shared_db::Postgres] pool: PgPool,
@@ -23,12 +22,17 @@ async fn axum(
     // Tracing: `RUST_LOG=tower_http=info,axum_server_shuttle=debug` etc.
     tracing_subscriber::registry()
         .with(tracing_subscriber::fmt::layer())
-        .with(tracing_subscriber::EnvFilter::try_from_default_env()
-            .unwrap_or_else(|_| "info,tower_http=info,sqlx=warn".into()))
+        .with(
+            tracing_subscriber::EnvFilter::try_from_default_env()
+                .unwrap_or_else(|_| "info,tower_http=info,sqlx=warn".into()),
+        )
         .init();
 
     // Run database migrations at startup
-    sqlx::migrate!().run(&pool).await.expect("Failed to run Migrations :(");
+    sqlx::migrate!()
+        .run(&pool)
+        .await
+        .expect("Failed to run Migrations :(");
 
     let cfg = ServerConfig::load_from_env().expect("config");
     let state = AppState::new(pool, cfg);

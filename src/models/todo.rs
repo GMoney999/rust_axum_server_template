@@ -1,4 +1,4 @@
-use serde::{Serialize, Deserialize};
+use serde::{Deserialize, Serialize};
 
 #[derive(Debug, Deserialize)]
 pub struct CreateTodo {
@@ -28,6 +28,11 @@ pub struct Todo {
 impl Todo {
     #[allow(dead_code)]
     pub fn new(id: i64, title: String, description: String, done: bool) -> Self {
-        Self { id, title, description, done }
+        Self {
+            id,
+            title,
+            description,
+            done,
+        }
     }
 }

@@ -1,7 +1,7 @@
 // src/app_state.rs
-use std::time::Instant;
-use sqlx::PgPool;
 use crate::config::ServerConfig;
+use sqlx::PgPool;
+use std::time::Instant;
 
 #[derive(Clone)]
 pub struct AppState {

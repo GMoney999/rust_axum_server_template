@@ -1,11 +1,11 @@
 // src/middleware/middleware.rs
-use crate::config::{ServerConfig, CorsPolicy};
-use crate::middleware::{MiddlewareSuite};
+use crate::config::{CorsPolicy, ServerConfig};
+use crate::middleware::MiddlewareSuite;
 
+use axum::http::{HeaderName, HeaderValue, Method, header};
 use std::time::Duration;
-use axum::http::{header, HeaderName, HeaderValue, Method};
-use tower::{Layer, ServiceBuilder};
 use tower::timeout::TimeoutLayer;
+use tower::{Layer, ServiceBuilder};
 use tower_http::{
     cors::{AllowOrigin, Any, CorsLayer},
     normalize_path::NormalizePathLayer,
@@ -56,14 +56,19 @@ impl MiddlewareSuite for Middleware {
             CorsPolicy::Permissive => Some(CorsLayer::new().with_defaults().allow_origin(Any)),
             CorsPolicy::Allow(list) => {
                 let allow_values: Vec<HeaderValue> = list.clone();
-                Some(CorsLayer::new().with_defaults().allow_origin(AllowOrigin::list(allow_values)))
+                Some(
+                    CorsLayer::new()
+                        .with_defaults()
+                        .allow_origin(AllowOrigin::list(allow_values)),
+                )
             }
         }
     }
 }
 
-
-trait CorsDefaultsExt { fn with_defaults(self) -> Self; }
+trait CorsDefaultsExt {
+    fn with_defaults(self) -> Self;
+}
 impl CorsDefaultsExt for CorsLayer {
     fn with_defaults(self) -> Self {
         self.allow_methods(default_methods())
@@ -72,10 +77,17 @@ impl CorsDefaultsExt for CorsLayer {
     }
 }
 
-
-#[inline] fn default_methods() -> [Method; 5] {
-    [Method::GET, Method::POST, Method::PUT, Method::PATCH, Method::DELETE]
+#[inline]
+fn default_methods() -> [Method; 5] {
+    [
+        Method::GET,
+        Method::POST,
+        Method::PUT,
+        Method::PATCH,
+        Method::DELETE,
+    ]
 }
-#[inline] fn default_headers() -> [HeaderName; 2] {
+#[inline]
+fn default_headers() -> [HeaderName; 2] {
     [header::CONTENT_TYPE, header::AUTHORIZATION]
 }

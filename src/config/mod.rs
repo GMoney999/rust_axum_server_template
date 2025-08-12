@@ -1,4 +1,4 @@
-mod server_config;
 mod app_state;
-pub use server_config::{ServerConfig, CorsPolicy};
+mod server_config;
 pub use app_state::AppState;
+pub use server_config::{CorsPolicy, ServerConfig};

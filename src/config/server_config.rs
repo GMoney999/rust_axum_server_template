@@ -1,7 +1,7 @@
 // src/server_config.rs
-use std::time::Duration;
-use axum::http::{HeaderName, HeaderValue};
 use anyhow::{Context, Result};
+use axum::http::{HeaderName, HeaderValue};
+use std::time::Duration;
 
 #[derive(Clone, Debug)]
 pub struct ServerConfig {
@@ -32,8 +32,8 @@ impl ServerConfig {
         let mut cfg = ServerConfig::default();
 
         if let Ok(h) = env::var("REQUEST_ID_HEADER") {
-            cfg.request_id_header = HeaderName::from_lowercase(h.as_bytes())
-                .context("invalid REQUEST_ID_HEADER")?;
+            cfg.request_id_header =
+                HeaderName::from_lowercase(h.as_bytes()).context("invalid REQUEST_ID_HEADER")?;
         }
 
         if let Ok(secs) = env::var("TIMEOUT_SECS") {
@@ -47,7 +47,9 @@ impl ServerConfig {
         } else if let Ok(csv) = env::var("CORS_ALLOWED_ORIGINS") {
             let mut origins = Vec::new();
             for o in csv.split(',').map(|s| s.trim()).filter(|s| !s.is_empty()) {
-                origins.push(HeaderValue::from_str(o).context("invalid origin in CORS_ALLOWED_ORIGINS")?);
+                origins.push(
+                    HeaderValue::from_str(o).context("invalid origin in CORS_ALLOWED_ORIGINS")?,
+                );
             }
             if !origins.is_empty() {
                 cfg.cors = CorsPolicy::Allow(origins);

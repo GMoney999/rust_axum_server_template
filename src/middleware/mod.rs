@@ -1,3 +1,4 @@
+#[allow(clippy::module_inception)]
 mod middleware;
 mod middleware_suite;
 
