@@ -15,7 +15,9 @@ use tower_http::{
 
 #[derive(Clone, Debug)]
 pub struct Middleware {
+    #[allow(dead_code)]
     request_id_header: HeaderName,
+    #[allow(dead_code)]
     timeout: Duration,
     cors: CorsPolicy,
 }
