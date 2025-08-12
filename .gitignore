@@ -1,4 +1,23 @@
+# Environment and secrets
 Secrets*.toml
 .env
-.idea
+
+# IDE/editor configs
+.idea/
+.vscode/
+
+# Build artifacts
 target
+
+# Root-level Markdown files (docs/ is kept)
+/*.md
+
+# OS-specific junk
+.DS_Store
+Thumbs.db
+
+# Editor swap/backup files
+*.swp
+*.swo
+*~
+
