@@ -1,0 +1,26 @@
+name: Shuttle Deploy
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Rust toolchain
+        uses: dtolnay/rust-toolchain@stable
+
+      - name: Install cargo-shuttle
+        run: cargo install cargo-shuttle --version '^0.53'
+
+      - name: Deploy to Shuttle
+        env:
+          SHUTTLE_API_KEY: ${{ secrets.SHUTTLE_API_KEY }}
+        run: cargo shuttle deploy
+
